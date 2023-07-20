@@ -18,12 +18,12 @@
     }
     ```
 - Make changes to your infrastructure code accordingly, so you upload to the bucket all those files (use `for_each`,`each.key` and `each.value`)
-```hcl
-  resource "aws_s3_object" "tt-bucket-files" {
-    bucket = aws_s3_bucket.tt-bucket.id
-    key    = each.key
-    source = "${path.module}/${each.value}"
-  
-    for_each = var.file_assets
-  }
-```
+    ```hcl
+      resource "aws_s3_object" "tt-bucket-files" {
+        bucket = aws_s3_bucket.tt-bucket.id
+        key    = each.key
+        source = "${path.module}/${each.value}"
+      
+        for_each = var.file_assets
+      }
+    ```
