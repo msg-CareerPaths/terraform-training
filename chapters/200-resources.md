@@ -6,6 +6,7 @@ Each resource describes one or more infrastructure objects such as virtual netwo
 
 - [Overview Resources](https://developer.hashicorp.com/terraform/language/resources)
 - [Syntax](https://developer.hashicorp.com/terraform/language/resources/syntax)
+- [Provisioning Infrastructure](https://developer.hashicorp.com/terraform/cli/run)
 
 ## Practical Work
 
