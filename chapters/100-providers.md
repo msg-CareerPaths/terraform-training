@@ -35,7 +35,7 @@ The first steps in providing your infrastructure in terraform are the following:
 3. Open a terminal inside that folder and run `terraform init` (or `tflocal init` when using LocalStack)
 4. This will create a lock file called `.terraform.lock.hcl` which specifies the exact providers versions
 5. And it will create `.terraform` folder where the actual provider implementation resides.
-6. Lastly, you can run `terraform fmt` to format all the code in the directory
+6. Lastly, you can run `terraform fmt` (or `tflocal fmt`) to format all the code in the directory
 
 ## The Terraform Pipeline
 

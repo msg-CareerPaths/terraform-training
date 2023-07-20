@@ -20,12 +20,13 @@ We will create an S3 bucket used for storing and downloading files in AWS
           bucket = "tt-bucket"
         }
     ```
-4. Open a terminal in the folder and run `terraform plan` (or `tflocal plan` when using LocalStack)
-5. Observe the changes that will happen on terminal output
-6. Run `terraform apply` (or `tflocal apply` when using LocalStack) and approve this changes
-7. Run `aws s3api list-buckets` (or `awslocal s3api list-buckets` when using LocalStack) and you should observe that the bucket was created
-8. Run `terraform destroy` (or `tflocal destroy`) and approve this changes
-9. Repeat the aws command from the previous step and you should have an empty list
+4. Open a terminal in the folder and run `<terraform / tflocal> validate` to validate your terraform code
+5. To see what changes will happen run `<terraform / tflocal> plan`
+6. Observe the changes that will happen on terminal output
+7. Run `<terraform / tflocal> apply` and approve this changes
+8. Run `<aws / awslocal> s3api list-buckets` and you should observe that the bucket was created
+9. Run `<terraform / tflocal> destroy` and approve this changes
+10Repeat the aws command from the previous step, and you should have an empty list
 
 ## The Terraform Pipeline
 

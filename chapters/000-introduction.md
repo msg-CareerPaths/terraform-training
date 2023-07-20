@@ -32,4 +32,6 @@ On your local machine install the following:
 
 # Difference between Wrappers and Normal Commands
 
-When running commands through the wrappers the only difference is that it will run those commands against the local network (localhost instead of AWS Cloud).
+- When running commands through the wrappers the only difference is that it will run those commands against the local network (localhost instead of AWS Cloud).
+- When using **Terraform**, if you are using LocalStack run `tflocal <command>` instead of `terraform <command>`
+- When using **AWS CLI**, if you are using LocalStack run `awslocal <command>` instead of `aws <command>`
