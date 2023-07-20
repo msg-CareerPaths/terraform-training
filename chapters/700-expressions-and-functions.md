@@ -27,3 +27,4 @@
         for_each = var.file_assets
       }
     ```
+- Apply the infrastructure and test the existence of the flies
