@@ -46,3 +46,11 @@ flowchart LR
     A[Infrastructure Deployed] -.->|destroy infrastructure| B(Terraform destroy)
     B -->|wait| C(Infrastructure Destroyed)
 ```
+
+### Add new resource
+```mermaid
+flowchart LR
+    A[Infrastructure Deployed] -.->|add new resource| B(Terraform Plan)
+    B -->|verify using TFState what resources need creating| C(Terraform Apply)
+    C --> |wait| D(New Resource Deployed)
+```
