@@ -36,7 +36,7 @@ We will create an S3 bucket used for storing and downloading files in AWS
 flowchart LR
     A[Terraform Init] -->|Download Providers Plugin| B(Terraform plan)
     B --> |changes to infrastructure| C(Terraform Apply)
-    C --> E(Infrastructure Deployed)
+    C -->|wait| E(Infrastructure Deployed)
 ```
 
 ### Destroy resources
