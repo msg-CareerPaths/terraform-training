@@ -42,7 +42,7 @@ flowchart LR
 ### Destroy resources
 
 ```mermaid
+flowchart LR
     A[Infrastructure Deployed] -.->|destroy infrastructure| B(Terraform destroy)
-    B --> C(Infrastructure Destroyed)
-
+    B -->|wait| C(Infrastructure Destroyed)
 ```
