@@ -30,11 +30,19 @@ We will create an S3 bucket used for storing and downloading files in AWS
 
 ## The Terraform Pipeline
 
+### Create resources
+
 ```mermaid
 flowchart LR
     A[Terraform Init] -->|Download Providers Plugin| B(Terraform plan)
     B --> |changes to infrastructure| C(Terraform Apply)
-    C -.->|destroy infrastructure| D(Terraform destroy)
     C --> E(Infrastructure Deployed)
-    D --> F(Infrastructure Destroyed)
+```
+
+### Destroy resources
+
+```mermaid
+    A[Infrastructure Deployed] -.->|destroy infrastructure| B(Terraform destroy)
+    B --> C(Infrastructure Destroyed)
+
 ```
